@@ -23,7 +23,7 @@
                         @endforeach
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="/#portfolio">Portfolio</a></li>
+                <!-- <li><a class="nav-link scrollto" href="/#portfolio">Portfolio</a></li> -->
                 <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
                 @auth
                 <li class="dropdown">
