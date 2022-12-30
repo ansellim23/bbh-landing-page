@@ -14,7 +14,7 @@ class CreateServicesModelsTable extends Migration
     public function up()
     {
         Schema::create('services_models', function (Blueprint $table) {
-            $table->increments('serviceID')->primary();
+            $table->increments('serviceID');
             $table->text('service_name')->nullable();
             $table->text('service_description')->nullable();
             $table->integer('service_status')->nullable();
