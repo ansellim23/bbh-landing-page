@@ -4,7 +4,7 @@
 
         <div class="section-title">
             <h2>Contact</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p></p>
         </div>
 
         <div class="row">
@@ -12,7 +12,7 @@
                 <div class="info-box mb-4">
                     <i class="bx bx-map"></i>
                     <h3>Our Address</h3>
-                    <p>8W85 8Q3, Leyte Loop, Cebu City, Cebu, Philippines</p>
+                    <p>1500 E Tropicana Avenue Ste 151, Las Vegas, NV 89119</p>
                 </div>
             </div>
 

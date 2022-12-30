@@ -21,7 +21,5 @@
 <livewire:homepage-component.counts/>
 <livewire:homepage-component.services/>
 <livewire:homepage-component.features/>
-<livewire:homepage-component.testimonials/>
-<livewire:homepage-component.portfolio/>
 <livewire:homepage-component.faq/>
 <livewire:homepage-component.contact/>

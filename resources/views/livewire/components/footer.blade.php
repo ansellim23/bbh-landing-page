@@ -6,9 +6,9 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h3>Better Bound House</h3>
                     <p>
-                        8W85 8Q3, Leyte Loop,<br>
-                        Cebu City, Cebu,<br>
-                        Philippines <br><br>
+                        1500 E Tropicana Avenue Ste 151, <br> 
+                        Las Vegas, <br>
+                        NV 89119<br><br>
                         <strong>Phone:</strong> +1 5589 55488 55<br>
                         <strong>Email:</strong> info@betterboundhouse.com<br>
                     </p>
