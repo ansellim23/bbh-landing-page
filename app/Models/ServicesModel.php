@@ -19,5 +19,6 @@ class ServicesModel extends Model
         'service_name',
         'service_description',
         'service_status',
+        'service_img',
     ];
 }

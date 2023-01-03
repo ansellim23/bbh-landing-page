@@ -22,17 +22,12 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
+                @php
+                  $str_rem_left = str_replace('["img_1"=>"', '', $service_child_data->service_child_img);
+                  $str_rem_right = str_replace('"]', '', $str_rem_left);
+                @endphp
                 <div class="swiper-slide">
-                  <img src="{{ asset('img/portfolio/portfolio-1.jpg') }}" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="{{ asset('img/portfolio/portfolio-2.jpg') }}" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="{{ asset('img/portfolio/portfolio-3.jpg') }}" alt="">
+                  <img src="{{ asset($str_rem_right) }}" alt="">
                 </div>
 
               </div>

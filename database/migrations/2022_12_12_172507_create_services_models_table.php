@@ -18,6 +18,7 @@ class CreateServicesModelsTable extends Migration
             $table->text('service_name')->nullable();
             $table->text('service_description')->nullable();
             $table->integer('service_status')->nullable();
+            $table->text('service_img')->nullable();
             $table->timestamps();
         });
     }

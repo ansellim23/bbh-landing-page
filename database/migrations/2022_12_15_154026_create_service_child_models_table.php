@@ -19,6 +19,7 @@ class CreateServiceChildModelsTable extends Migration
             $table->text('service_child_description')->nullable();
             $table->integer('service_child_parentID')->nullable();
             $table->integer('service_child_status')->nullable();
+            $table->text('service_child_img')->nullable();
             $table->timestamps();
         });
     }

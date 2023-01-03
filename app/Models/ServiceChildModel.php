@@ -19,5 +19,6 @@ class ServiceChildModel extends Model
         'service_child_description',
         'service_child_parentID',
         'service_child_status',
+        'service_child_img',
     ];
 }
