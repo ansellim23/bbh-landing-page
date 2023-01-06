@@ -1,7 +1,24 @@
-<!-- ======= Features Section ======= -->
+<!-- ======= Features Section ======= --> 
 <section id="features" class="features">
     <div class="container" data-aos="fade-up">
 
+
+        <div class="features-info">
+               <img src="{{ asset('img/feature-bg.jpg') }}" class="img-fluid" alt="">
+
+        </div>
+        <div class="features-contents">
+                   <h2>What We do</h2>
+                    <p>We offer a wide range of digital marketing services and</p>
+                    <p>business solutions that can help your company grow. Our</p>
+                    <p>team is made up of experts in software and program</p>
+                    <p>development, graphic design, content creation, and</p>
+                    <p>more all of which are needed to make your business</p>
+                    <p>thrive. Here's a quick breakdown of what we do:</p>
+        </div>
+
+
+<!-- 
         <div class="section-title">
             <h2>WHAT WE DO</h2>
             <p>
@@ -41,6 +58,6 @@
                 <img src="{{ asset('img/features.svg') }}" alt="" class="img-fluid">
             </div>
         </div>
-
+ -->
     </div>
-</section><!-- End Features Section -->
+</section>.

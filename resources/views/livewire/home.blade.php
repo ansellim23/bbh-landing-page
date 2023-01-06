@@ -19,7 +19,8 @@
 
 <livewire:homepage-component.about/>
 <livewire:homepage-component.counts/>
-<livewire:homepage-component.services/>
 <livewire:homepage-component.features/>
+<livewire:homepage-component.services/>
+<livewire:homepage-component.subservices/>
 <livewire:homepage-component.faq/>
 <livewire:homepage-component.contact/>

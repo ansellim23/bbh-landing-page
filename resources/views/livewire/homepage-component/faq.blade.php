@@ -1,5 +1,5 @@
 <!-- ======= Frequently Asked Questions Section ======= -->
-<section id="faq" class="faq">
+<!-- <section id="faq" class="faq">
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -245,4 +245,4 @@
         </div>
 
     </div>
-</section><!-- End Frequently Asked Questions Section -->
+</section> --><!-- End Frequently Asked Questions Section

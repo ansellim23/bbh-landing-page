@@ -8,6 +8,7 @@ use App\Http\Controllers\ForgotPasswordController;
 //Landing Pages
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Login;
+use App\Http\Livewire\HomepageComponent\AboutPage;
 use App\Http\Livewire\Register;
 use App\Http\Livewire\ForgotPassword;
 use App\Http\Livewire\ForgotPasswordView;
@@ -33,6 +34,7 @@ Auth::routes();
 
 Route::get('/', Home::class)->name('home');
 Route::get('/login', Login::class)->name('login');
+Route::get('/about', AboutPage::class)->name('about');
 Route::get('/register', Register::class)->name('register');
 Route::get('/forgot-password', ForgotPassword::class)->name('forgot-password');
 

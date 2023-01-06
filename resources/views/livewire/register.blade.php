@@ -4,10 +4,10 @@
             <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
                 <hgroup>
                     <h2>Register to enjoy our site's greatness</h2>
-                    <p>lorem ipsum</p>
-                </hgroup>
+<!--                     <p>lorem ipsum</p>
+ -->                </hgroup>
                 
-                <form class="log-form">
+                <form class="log-form registration_form">
                     @if(session()->has('message'))
                         <div class="alert alert-success">
                             {{ session('message') }}
@@ -51,8 +51,8 @@
                         <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password" wire:model="password_confirmation">
                         @error('password_confirmation')<small><span class="text-danger error">{{ $message }}</span></small>@enderror
                     </div>
-                    <div class="pt-1 mb-4">
-                        <a class="btn btn-lg btn-primary text-white" wire:click.prevent="registerUser" wire:loading.remove>Register</a>
+                    <div class="pt-1 mb-4 text-center">
+                        <a class="btn btn-lg btn-primary text-white register-now" wire:click.prevent="registerUser" wire:loading.remove>Register</a>
                         <div wire:loading>
                             <div class="spinner-border" role="status">
                                 <span class="visually-hidden">Loading...</span>
@@ -61,7 +61,7 @@
                     </div>
                 </form>
                 <hgroup>
-                    <p>Already have an account? <a href="{{ url('/login') }}">Login now!</a></p>
+                    <p>Already have an account? <a href="{{ url('/login') }}" class="login-now">Login now!</a></p>
                 </hgroup>
             </div>
         </div>

@@ -16,6 +16,10 @@
         top: 0px;
     }
 }
+span, p, a{
+   font-family: sans-serif;
+    color : $text_color;
+}
 
 #header .logo img {
     max-height: 200px !important;
@@ -23,6 +27,141 @@
     margin-bottom: -85px;
 }
 
+
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+  border: 2px solid #262626;
+}
+
+.navbar li:hover > a span{
+   color: #310f53;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000 !important;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #b9b5b5;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > {
+   color: #ffffff;
+}
+
+
+
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+  color: #fff;
+  #border-color: #491d5c;;
+}
+
+.counts {
+  background: #f3f3f3;
+  padding: 80px 0 60px 0;
+
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+    padding: 120px 0;
+}
+
+
+.about .content h3, .about .content .h3 {
+  font-size: 72px;
+  color: #000000;
+}
+.about .content h3 span {
+  font-size: 72px;
+  display: block;
+}
+
+.about .content p {
+    font-size: 17px;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+}
+
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #5846f9;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .content .read-more {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 50px 10px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #ffffff;
+    background: #000000;
+    position: relative;
+}
+
+.about .content .read-more:hover {
+    background: #262626;
+}
+
+.about .content .read-more i {
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+
+.counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    color: #000000;
+}
+
+.counts .counters span {
+    font-size: 48px;
+    display: block;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.features{
+    background: #000000;
+}
 
 .hover-1 {
     background: linear-gradient(#1095c1 0 0) var(--p,0%) / var(--p,0%) no-repeat;
@@ -101,8 +240,54 @@
     font-variant: small-caps;
 }
 
+.services .icon-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 20px;
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.services .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #f3f3f3;
+}
+
+#footer {
+    color: #fff;
+    font-size: 14px;
+    background: #000000;;
+    background-size: cover;
+}
+
 .cta-banner{
     padding: 58px 0;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="password"], select {
+  background: #262626;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 24px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: none;
+  width: 100%;
+  color: #000000;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: #f3f3f3 !important;
+  padding: 12px 0;
 }
 
 .creators-bg{
@@ -147,6 +332,12 @@ hgroup {
   box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
 }
 
+.log-form .remember_info{
+ margin :0px auto;
+ text-align: center;
+    
+}
+
 .group { 
   position: relative; 
   margin-bottom: 45px; 
@@ -167,13 +358,44 @@ hgroup {
 
 .log-input:focus { outline: none; }
 
-.log-form a {
+.log-form .read-more, .registration_form .register-now{
     font-size: 9px;
     font-weight: 600;
     letter-spacing: 0.3em;
     line-height: 24px;
     text-transform: uppercase;
-    color: #aaaaaa;
+    color: #fffffff;
+    background: #000000;
+    border-radius :50px;
+    width :30%;
+    border :none
+}
+
+.log-form .read-more:hover, .registration_form .register-now:hover{
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fffffff;
+    background: #262626;
+    border-radius :50px;
+    width :30%;
+    border :#f3f3f3;
+}
+.log-form .forgot-password, .register-now, .login-now{
+   color: #000000;
+   text-decoration: underline;
+    
+
+}
+
+.log-form .forgot-password:hover, .register-now:hover, .login-now:hover{
+   color: #262626;
+     text-decoration: underline;
+
+    
+
 }
 
 .left-align {
@@ -217,6 +439,315 @@ input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + l
     text-transform: uppercase;
 }
 
-.nav-bg-on{
-    background: rgba(0,0,0,0.5);
+.nav-bg-on {
+   background: rgba(240, 232, 232, 0.5);
+}
+
+
+  .features-info{
+    position: relative;
+    padding: 30px 0px;
+    float: left;
+ }   
+  .features-info img{
+   width :650px;
+ }    
+   .features-contents{
+      float: right;
+      margin: 90px 20px auto auto;
+      color: #ffffff;
+    }
+
+  .features-contents h2{
+      font-size: 31px;
+      text-align:center;
+ }
+  .features-contents p{
+      font-size: 20px;
+      color : #ffffff;
+      line-height:15px;
+ }
+
+
+ .services .icon-box h4 a {
+    color: #000000;
+    transition: ease-in-out 0.3s;
+}
+#sub-services{
+    padding:0px 0px 0px 0px;
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    margin: 10px 0;
+}
+        
+.services .iconbox-blue i {
+  color: #000000;
+}
+
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+.services .iconbox-blue:hover .icon path {
+  fill: #000000;
+}
+
+services .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: #000000;
+}
+
+
+
+.services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+.services .iconbox-orange i {
+    color: #ffa76e;
+}
+
+.services .iconbox-orange:hover .icon i {
+    fill: #000000;
+}
+
+.services .iconbox-orange:hover .icon path {
+    fill: #000000;
+}
+
+.services .iconbox-pink i {
+    color: #e80368;
+}
+
+.services .iconbox-pink:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-pink:hover .icon path {
+    fill: #000000;
+}
+
+.services .iconbox-yellow i {
+    color: #ffbb2c;
+}
+
+.services .iconbox-yellow:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-yellow:hover .icon path {
+    fill: #000000;
+}
+
+.services .iconbox-red i {
+    color: #ff5828;
+}
+
+.services .iconbox-red:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-red:hover .icon path {
+    fill: #000000;
+}
+
+.services .iconbox-teal i {
+    color: #11dbcf;
+}
+
+.services .iconbox-teal:hover .icon i {
+    color: #fff;
+}
+
+.services .iconbox-teal:hover .icon path {
+    fill: #000000;
+}
+
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #262626;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+
+#footer span{
+    display :block;
+    color: #ffffff;
+    font-size: 31px;
+}
+
+#footer .footer-top .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#footer .footer-info{
+    display :inline-block;
+    position :relative;
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #262626;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 5px;
+    text-align: left;
+    color: #ffffff;
+    border: 1px solid #262626;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #000000;
+    border: 0;
+    padding: 10px 24px;
+    color: #ffffff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 10px 50px 10px 28px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #262626;
+}
+
+.bg_img{
+    background-image: url("/img/our_services-bg.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height :625px;
+    width :100%;
+    padding : 160px 0px 0px 0px;
+
+}
+
+.align_items{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height:15px;
+}
+.align_items p {
+    font-size : 20px;
+    color: #ffffff;
+ }
+ .align_items h3 {
+    font-size : 52px;
+ }
+.align_items button{
+    border-radius: 20px;
+    font-weight: bold;
+    font-size:20px;
+}
+.breadcrumbs {
+    padding: 40px 0px 30px 0px;
+    background: #f2f6f9;
+    min-height: 40px;
+    margin-top: 100px;
+    color: #ffffff;
+    font-weight:400;
+    font-size: 72px;
+}
+
+.breadcrumbs h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color : #000000;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+    color : #000000;
+}
+.breadcrumbs a{
+    color: #000000;
+}
+
+.breadcrumbs a:hover{
+    color: #000000;
+}
+
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0;
+    font-size: 17px;
+    color: #262626;
+}
+
+
+input[type=text], input[type=date], input[type=email], input[type=password], select {
+  background: transparent;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 24px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: none;
+  width: 100%;
+  color: #000000;
+}
+
+#footer .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+    color: #ffffff;
+}
+
+
+#footer .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #ffffff;
+    color: #000000;
+    transition: 0.3s;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+    background: #b9b5b5;
+}
+.about .content h3{
+    font-weight: bold;
+    font-size: 72px;
+    color: #000;
 }
