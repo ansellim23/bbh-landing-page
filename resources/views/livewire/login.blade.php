@@ -32,6 +32,7 @@
                         <input type="password" id="password" name="password"  placeholder="Password" wire:model="password">
                         @error('password')<small><span class="text-danger error">{{ $message }}</span></small>@enderror
                     </div>
+                    <div class="remember_info">
                     <small><input type="checkbox" name="remember_me" id="remember_me" wire:model="remember_me"> Remember Me</small><br><br>
                     <div class="pt-1 mb-4">
                         <a class="read-more btn btn-lg btn-primary text-white" wire:click.prevent="login" wire:loading.remove>Login</a>
@@ -42,10 +43,11 @@
                         </div>
                     </div>
                     
-                    <small><a href="{{ url('forgot-password') }}">Forgot Password?</a></small><br><br>
+                    <small><a href="{{ url('forgot-password') }}" class="forgot-password">Forgot Password?</a></small><br><br>
+                </div>
                 </form>
                 <hgroup>
-                    <p>Don't have an account? <a href="{{ url('/register') }}">Register now!</a></p>
+                    <p>Don't have an account? <a href="{{ url('/register') }}" class="register-now">Register now!</a></p>
                 </hgroup>
             </div>
         </div>
