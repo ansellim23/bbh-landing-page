@@ -5,23 +5,19 @@
         <div class="row counters">
 
             <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Clients</p>
+                <span>232 Clients</span>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
+                <span>521 Clients</span>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
+                 <span>1463 Hours</span>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+                <span>125 Employees</span>
             </div>
 
         </div>

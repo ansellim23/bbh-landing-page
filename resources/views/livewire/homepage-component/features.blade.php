@@ -9,12 +9,12 @@
         </div>
         <div class="features-contents">
                    <h2>What We do</h2>
-                    <p>We offer a wide range of digital marketing services and</p>
-                    <p>business solutions that can help your company grow. Our</p>
-                    <p>team is made up of experts in software and program</p>
-                    <p>development, graphic design, content creation, and</p>
-                    <p>more all of which are needed to make your business</p>
-                    <p>thrive. Here's a quick breakdown of what we do:</p>
+                    <p>We offer a wide range of digital marketing services an</br>
+                       business solutions that can help yo0ur company grow. Our</br>
+                       team is made up of experts in software and program</br>
+                       development, graphic design, content creation, and</br>
+                       more all of which are needed to make your business</br>
+                       thrive. Here's a quick breakdown of what we do</br>
         </div>
 
 

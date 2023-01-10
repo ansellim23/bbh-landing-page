@@ -20,30 +20,30 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                         <h4>Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Recruitment</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Content Writing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Software Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Recruitment</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Content Writing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Privacy policy</a></li>
                         </ul>
                 </div>
 
                 <div class="col-lg-2 col-md-3 footer-links">
                          <h4>About Us</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Company</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Mission</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Vision</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Our Company</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Our Mission</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Our Vision</a></li>
                         </ul>
                 </div>
 
                    <div class="col-lg-2 col-md-3 footer-links">
                       <h4>Contact</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Visit us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">E-mail us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Call us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Visit us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="mailto:info@betterboundhouse.com"">E-mail us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="tel:+1882248399">Call us</a></li>
                         </ul>
                 </div>
 
