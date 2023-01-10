@@ -1,0 +1,94 @@
+@media screen and (max-width: 1195px) {
+    .features-contents{
+        margin: 70px auto auto auto;
+        float: none;
+        text-align: center; 
+    }
+    .features-info {
+        position: relative;
+        padding: 30px 0px;
+        float: none;
+        margin: 0px auto;
+        text-align: center;
+      }
+}
+
+@media screen and (max-width: 1100px) {
+    .desktop_view_vid{
+        display: block;
+    }
+    .mobile_view_vid{
+        display: none;
+    }
+}
+
+
+@media only screen 
+and (max-width : 970px) {
+    .counts .counters span{
+        display: inline-block;
+        margin: 20px auto;
+    }
+
+}
+
+
+/* Large Tablet Devices ----------- */
+@media only screen 
+and (max-width : 970px) {
+
+}
+
+
+/* Table Devices */
+@media only screen 
+and (max-width : 765px) {
+    .about{
+        padding: 80px 0px;
+    }
+    .about .content p{
+        font-size: 22px;
+    }
+    .align_items p{
+        line-height: 15px;
+        font-size: 16px;;
+     }
+
+    #footer{
+        text-align: center;
+        margin:0px auto;
+    }
+    #footer .footer-top .footer-contact{
+        margin-bottom: -125px;
+    }
+    #footer .footer-top .footer-links ul{
+        list-style: none;
+        padding: 0;
+        width: 180px;
+        margin: 0px auto;
+      }
+
+      #footer .footer-top h4 {
+        width: 170px;
+        margin: 0px auto;
+        text-align: left;
+      }
+
+}
+
+
+/* Tablest Device */
+@media only screen 
+and (max-width : 734px) {
+
+
+}
+
+/* Smartphones */
+@media only screen 
+and (max-width : 500px) {
+    .about .content p {
+        font-size: 20px;
+    }
+
+}

@@ -4,6 +4,11 @@
   text-decoration: none;
 }
 
+.bi-book::before {
+  vertical-align: top !important;
+  position: relative !important;
+}
+
 .video-overlay {
   position: absolute;
   width: 100%;
@@ -21,6 +26,48 @@
   }
 }
 
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #000000;
+  border-top-color: #e7e4fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
 span, p, a {
   font-family: sans-serif;
   color: #000000;
@@ -36,6 +83,20 @@ span, p, a {
   border: 2px solid #262626;
 }
 
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #040556;
+}
+
+.navbar li:hover > a span {
+  color: #000000;
+}
+
+.navbar a, .navbar a:hover {
+  color: #040556;
+}
+
 .navbar a, .navbar a:focus {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -44,8 +105,21 @@ span, p, a {
   white-space: nowrap;
 }
 
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #040556;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 .navbar li:hover > a span {
-  color: #310f53;
+  color: #000000;
 }
 
 .navbar a, .navbar a:focus {
@@ -56,7 +130,7 @@ span, p, a {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #000000 !important;
+  color: #000000;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -67,20 +141,19 @@ span, p, a {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 5px;
-  color: #fff;
+  color: #000000;
   transition: 0.3s;
   font-size: 14px;
   font-weight: 600;
   border: 2px solid #b9b5b5;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus {
-  color: #ffffff;
+.nav-link:hover, .nav-link:focus {
+  color: #040556;
 }
 
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  color: #fff;
-  #border-color: #491d5c;
+  color: #000000;
 }
 
 .counts {
@@ -95,6 +168,11 @@ span, p, a {
   padding: 120px 0;
 }
 
+.about .content .fst-italic {
+  line-height: 30px;
+  font-size: 18px !important;
+}
+
 .about .content h3, .about .content .h3 {
   font-size: 72px;
   color: #000000;
@@ -103,10 +181,17 @@ span, p, a {
 .about .content h3 span, .about .content .h3 span {
   font-size: 72px;
   display: block;
+  line-height: 65px;
 }
 
 .about .content p {
-  font-size: 17px;
+  font-size: 23px;
+  line-height: 15px;
+  font-family: sans-serif;
+}
+
+.about .content .about-detail {
+  margin: 50px auto auto auto;
 }
 
 .about .content ul {
@@ -140,6 +225,7 @@ span, p, a {
   color: #ffffff;
   background: #000000;
   position: relative;
+  margin: 30px auto auto auto;
 }
 
 .about .content .read-more:hover {
@@ -161,15 +247,28 @@ span, p, a {
 }
 
 .counts .counters span {
-  font-size: 48px;
+  font-size: 26px;
   display: block;
   color: #000000;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+}
+
+.counts .counters span:before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #000000;
+  position: relative;
+  vertical-align: top;
+  top: -5px;
+  right: 25px;
 }
 
 .features {
   background: #000000;
+  padding: 0px 0px 0px 0px;
 }
 
 .hover-1 {
@@ -373,7 +472,7 @@ hgroup {
   letter-spacing: 0.3em;
   line-height: 24px;
   text-transform: uppercase;
-  color: #fffffff;
+  color: #ffffff;
   background: #000000;
   border-radius: 50px;
   width: 30%;
@@ -386,7 +485,7 @@ hgroup {
   letter-spacing: 0.3em;
   line-height: 24px;
   text-transform: uppercase;
-  color: #fffffff;
+  color: #ffffff;
   background: #262626;
   border-radius: 50px;
   width: 30%;
@@ -448,17 +547,17 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
 
 .features-info {
   position: relative;
-  padding: 30px 0px;
+  padding: 0px 0px;
   float: left;
 }
 
 .features-info img {
-  width: 650px;
+  width: 740px;
 }
 
 .features-contents {
   float: right;
-  margin: 90px 20px auto auto;
+  margin: 70px -110px auto auto;
   color: #ffffff;
 }
 
@@ -470,7 +569,6 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
 .features-contents p {
   font-size: 20px;
   color: #ffffff;
-  line-height: 15px;
 }
 
 .services .icon-box h4 a, .services .icon-box .h4 a {
@@ -489,8 +587,20 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
   margin: 10px 0;
 }
 
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #262626;
+}
+
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #2c3e50;
 }
 
 .services .icon-box .icon svg path {
@@ -500,6 +610,11 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
 
 .services .iconbox-blue:hover .icon path {
   fill: #000000;
+}
+
+.services .iconbox-blue:hover .icon i {
+  fill: #000000;
+  color: #ffffff;
 }
 
 services .icon-box .icon svg path {
@@ -513,11 +628,16 @@ services .icon-box .icon svg path {
 }
 
 .services .iconbox-orange i {
-  color: #ffa76e;
+  color: #2c3e50;
+}
+
+.services .iconbox-orange i:hover {
+  color: #ffffff;
 }
 
 .services .iconbox-orange:hover .icon i {
   fill: #000000;
+  color: #ffffff;
 }
 
 .services .iconbox-orange:hover .icon path {
@@ -525,7 +645,7 @@ services .icon-box .icon svg path {
 }
 
 .services .iconbox-pink i {
-  color: #e80368;
+  color: #2c3e50;
 }
 
 .services .iconbox-pink:hover .icon i {
@@ -537,7 +657,7 @@ services .icon-box .icon svg path {
 }
 
 .services .iconbox-yellow i {
-  color: #ffbb2c;
+  color: #2c3e50;
 }
 
 .services .iconbox-yellow:hover .icon i {
@@ -549,7 +669,7 @@ services .icon-box .icon svg path {
 }
 
 .services .iconbox-red i {
-  color: #ff5828;
+  color: #2c3e50;
 }
 
 .services .iconbox-red:hover .icon i {
@@ -561,7 +681,7 @@ services .icon-box .icon svg path {
 }
 
 .services .iconbox-teal i {
-  color: #11dbcf;
+  color: #2c3e50;
 }
 
 .services .iconbox-teal:hover .icon i {
@@ -570,6 +690,20 @@ services .icon-box .icon svg path {
 
 .services .iconbox-teal:hover .icon path {
   fill: #000000;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .back-to-top {
@@ -586,35 +720,39 @@ services .icon-box .icon svg path {
   transition: all 0.4s;
 }
 
-#footer span {
+.back-to-top:hover {
+  background: #8c8a8e;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #000;
+}
+
+.section-title h2::after, .section-title .h2::after {
+  content: "";
+  position: absolute;
   display: block;
-  color: #ffffff;
-  font-size: 31px;
+  width: 50px;
+  height: 3px;
+  background: #1a0f0f;
+  bottom: 0;
+  left: calc(50% - 25px);
 }
 
-#footer .footer-top .footer-contact h3, #footer .footer-top .footer-contact .h3 {
-  font-size: 28px;
-  margin: 0 0 30px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 500;
-  text-transform: uppercase;
+.contact .info-box i {
+  font-size: 32px;
+  color: #91989d;
+  border-radius: 50%;
+  padding: 8px;
 }
 
-#footer .footer-info {
-  display: inline-block;
-  position: relative;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #262626;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 5px;
-  text-align: left;
-  color: #ffffff;
-  border: 1px solid #262626;
+.contact .info-box i:hover {
+  font-size: 32px;
+  color: #040556;
+  border-radius: 50%;
+  padding: 8px;
 }
 
 .contact .php-email-form button[type=submit] {
@@ -634,7 +772,7 @@ services .icon-box .icon svg path {
 }
 
 .bg_img {
-  background-image: url("/img/our_services-bg.jpeg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/our_services-bg.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -653,6 +791,7 @@ services .icon-box .icon svg path {
 .align_items p {
   font-size: 20px;
   color: #ffffff;
+  line-height: 25px;
 }
 
 .align_items h3, .align_items .h3 {
@@ -667,7 +806,7 @@ services .icon-box .icon svg path {
 
 .breadcrumbs {
   padding: 40px 0px 30px 0px;
-  background: #f2f6f9;
+  background: #ffffff;
   min-height: 40px;
   margin-top: 100px;
   color: #ffffff;
@@ -722,6 +861,148 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
   color: #000000;
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#footer .footer-top h4, #footer .footer-top .h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4, #footer .footer-newsletter .h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .copyright-wrap {
+  border-top: 1px solid #8c8a8e;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #fff;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: underline;
+  color: #8c8a8e;
+}
+
+#footer span {
+  display: block;
+  color: #ffffff;
+  font-size: 31px;
+}
+
+#footer .footer-top .footer-contact h3, #footer .footer-top .footer-contact .h3 {
+  font-size: 28px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#footer .footer-info {
+  display: inline-block;
+  position: relative;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #262626;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+  color: #ffffff;
+  border: 1px solid #262626;
+}
+
 #footer .footer-newsletter form input[type=email] {
   border: 0;
   padding: 4px 8px;
@@ -749,12 +1030,83 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
   background: #b9b5b5;
 }
 
+#footer .credits a:hover {
+  color: #8c8a8e;
+}
+
 .about .content h3, .about .content .h3 {
   font-weight: bold;
   font-size: 72px;
   color: #000;
 }
 
+@media screen and (max-width: 1195px) {
+  .features-contents {
+    margin: 70px auto auto auto;
+    float: none;
+    text-align: center;
+  }
+  .features-info {
+    position: relative;
+    padding: 30px 0px;
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .desktop_view_vid {
+    display: block;
+  }
+  .mobile_view_vid {
+    display: none;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .counts .counters span {
+    display: inline-block;
+    margin: 20px auto;
+  }
+}
+/* Large Tablet Devices ----------- */
+/* Table Devices */
+@media only screen and (max-width: 765px) {
+  .about {
+    padding: 80px 0px;
+  }
+  .about .content p {
+    font-size: 22px;
+  }
+  .align_items p {
+    line-height: 15px;
+    font-size: 16px;
+  }
+  #footer {
+    text-align: center;
+    margin: 0px auto;
+  }
+  #footer .footer-top .footer-contact {
+    margin-bottom: -125px;
+  }
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    width: 180px;
+    margin: 0px auto;
+  }
+  #footer .footer-top h4, #footer .footer-top .h4 {
+    width: 170px;
+    margin: 0px auto;
+    text-align: left;
+  }
+}
+/* Tablest Device */
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .about .content p {
+    font-size: 20px;
+  }
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

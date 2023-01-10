@@ -37,7 +37,7 @@
         <div class="row">
 
             <div class="col-lg-6 ">
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1500%20E%20Tropicana%20Avenue%20Ste%20151,%20Las%20Vegas,%20NV%2089119+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+                <iframe width="100%" height="375" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=375&amp;hl=en&amp;q=1500%20E%20Tropicana%20Avenue%20Ste%20151,%20Las%20Vegas,%20NV%2089119+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
             </div>
 
             <div class="col-lg-6">

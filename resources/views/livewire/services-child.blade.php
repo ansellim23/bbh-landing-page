@@ -3,7 +3,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
+          <h2>Services Details</h2>
           <ol>
             <li><a href="{{ url()->previous() }}">Home</a></li>
             <li>Portfolio Details</li>
