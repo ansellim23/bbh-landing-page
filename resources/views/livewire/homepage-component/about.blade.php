@@ -15,7 +15,7 @@
                 <p>technological changes is key to any successful</p>
                 <p>enterprise. The right technology increases flexibility,</p>
                 <p>streamlines operations, and helps you cope with</p>
-                <p>changes in the marketplace. . We wish to witness</p>
+                <p>changes in the marketplace. We wish to witness</p>
                 <p>more companies grow with the help of our digital</p>
                 <p>professionals.</p>
                  

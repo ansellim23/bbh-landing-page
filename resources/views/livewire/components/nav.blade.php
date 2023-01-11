@@ -6,7 +6,7 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="/#hero">Home</a></li>
+                <li><a class="nav-link scrollto active" href="/#video">Home</a></li>
                 <li><a class="nav-link scrollto" href="/#about">About</a></li>
                 <li class="dropdown"><a class="nav-link scrollto" href="/#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
