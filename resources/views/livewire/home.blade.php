@@ -1,5 +1,5 @@
 @section('hero-banner')
-<div class="vid_show">
+<div id="video" class="vid_show">
     <div class="desktop_view_vid">
         <div class="row justify-content-center">
         <video class="hero-video" playsinline="1" autoplay="1" muted="1" loop="1">
