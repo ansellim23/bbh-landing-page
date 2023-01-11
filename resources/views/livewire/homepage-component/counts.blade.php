@@ -9,7 +9,7 @@
             </div>
 
             <div class="col-lg-3 col-6 text-center">
-                <span>521 Clients</span>
+                <span>521 Companies</span>
             </div>
 
             <div class="col-lg-3 col-6 text-center">
