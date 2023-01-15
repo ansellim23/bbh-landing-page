@@ -139,7 +139,6 @@ span, p, a {
 .navbar .getstarted,
 .navbar .getstarted:focus {
   padding: 8px 25px;
-  margin-left: 30px;
   border-radius: 5px;
   color: #000000;
   transition: 0.3s;
@@ -154,6 +153,12 @@ span, p, a {
 
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #000000;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #040556;
 }
 
 .counts {
@@ -174,6 +179,7 @@ span, p, a {
 }
 
 .about .content h3, .about .content .h3 {
+  font-weight: 400;
   font-size: 72px;
   color: #000000;
 }
@@ -552,7 +558,7 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
 }
 
 .features-info img {
-  width: 740px;
+  width: 600px;
 }
 
 .features-contents {
@@ -569,6 +575,7 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
 .features-contents p {
   font-size: 20px;
   color: #ffffff;
+  line-height: 15px;
 }
 
 .services .icon-box h4 a, .services .icon-box .h4 a {
@@ -597,6 +604,29 @@ input[type=checkbox]:not(:checked) + label, input[type=checkbox]:checked + label
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
   border-color: #262626;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 16px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+  font-family: sans-serif;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #000000;
 }
 
 .services .iconbox-blue i {
@@ -1034,15 +1064,21 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
   color: #8c8a8e;
 }
 
-.about .content h3, .about .content .h3 {
-  font-weight: bold;
-  font-size: 72px;
-  color: #000;
-}
-
 @media screen and (max-width: 1195px) {
+  .about {
+    padding: 60px 0px;
+  }
+  .about .content p {
+    line-height: 30px;
+    display: inline;
+  }
+  .about .content .read-more {
+    display: block;
+    width: 185px;
+    margin: 25px 0px;
+  }
   .features-contents {
-    margin: 70px auto auto auto;
+    margin: 30px auto 40px auto;
     float: none;
     text-align: center;
   }
@@ -1068,7 +1104,6 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
     margin: 20px auto;
   }
 }
-/* Large Tablet Devices ----------- */
 /* Table Devices */
 @media only screen and (max-width: 765px) {
   .about {
@@ -1077,9 +1112,12 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
   .about .content p {
     font-size: 22px;
   }
+  .align_items h3, .align_items .h3 {
+    font-size: 50px;
+  }
   .align_items p {
-    line-height: 15px;
-    font-size: 16px;
+    line-height: 35px;
+    display: inline;
   }
   #footer {
     text-align: center;
@@ -1101,6 +1139,30 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
   }
 }
 /* Tablest Device */
+@media only screen and (max-width: 600px) {
+  .about .content p {
+    font-size: 18px;
+    line-height: 30px;
+    display: inline;
+  }
+  .about .content .read-more {
+    display: block;
+    width: 185px;
+  }
+  .align_items p {
+    font-size: 16px;
+  }
+  .features-contents {
+    margin: 50px auto auto auto;
+  }
+  .counts .counters span {
+    font-size: 15px;
+  }
+  .features-contents p {
+    display: inline-block;
+    font-size: 18px;
+  }
+}
 /* Smartphones */
 @media only screen and (max-width: 500px) {
   .about .content p {

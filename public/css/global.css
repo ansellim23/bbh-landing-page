@@ -283,11 +283,6 @@ h6 {
     font-size: 12px;
 }
 
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-    color: #5846f9;
-}
 
 .navbar-mobile .dropdown>.dropdown-active {
     display: block;
@@ -1074,25 +1069,10 @@ content: "";
     animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-    border-radius: 5px;
-    box-shadow: none;
-    font-size: 14px;
-}
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-    border-color: #5846f9;
-}
 
-.contact .php-email-form input {
-    padding: 10px 15px;
-}
 
-.contact .php-email-form textarea {
-    padding: 12px 15px;
-}
+
 
 
 

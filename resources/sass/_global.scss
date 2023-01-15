@@ -148,7 +148,6 @@ span, p, a{
 .navbar .getstarted,
 .navbar .getstarted:focus {
     padding: 8px 25px;
-    margin-left: 30px;
     border-radius: 5px;
     color: #000000;
     transition: 0.3s;
@@ -166,6 +165,13 @@ span, p, a{
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #000000;
 }
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+    color: #040556;;
+}
+
 
 .counts {
   background: #f3f3f3;
@@ -185,6 +191,7 @@ span, p, a{
 }
 
 .about .content h3, .about .content .h3 {
+    font-weight: 400;
   font-size: 72px;
   color: #000000;
 }
@@ -575,7 +582,7 @@ input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + l
     float: left;
  }   
   .features-info img{
-   width :740px;
+   width :600px;
  }    
    .features-contents{
       float: right;
@@ -590,6 +597,7 @@ input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + l
   .features-contents p{
       font-size: 20px;
       color : #ffffff;
+      line-height: 15px;
  }
 
 
@@ -620,6 +628,28 @@ input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + l
     border-color: #262626;
 }
 
+.contact .php-email-form input {
+    padding: 10px 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.contact .php-email-form textarea {
+    padding: 12px 15px;
+    font-family: sans-serif;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #000000;
+}
 
 .services .iconbox-blue i {
   color: #2c3e50;
@@ -1063,8 +1093,4 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
 #footer .credits a:hover {
     color: #8c8a8e;
   }
-.about .content h3{
-    font-weight: bold;
-    font-size: 72px;
-    color: #000;
-}
+

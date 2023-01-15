@@ -8,7 +8,7 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="/#video">Home</a></li>
                 <li><a class="nav-link scrollto" href="/#about">About</a></li>
-                <li class="dropdown"><a class="nav-link scrollto" href="/#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a class="nav-link scrollto" href="jasvascript::void(0);"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         @foreach($service_nav_data as $snd)
                             <li {!! check_service_child($snd->serviceID) == 1 ? 'class="dropdown"' : '' !!}><a href="{{ url('services/'.$snd->serviceID) }}"><span>{{ $snd->service_name }}</span>  {!! check_service_child($snd->serviceID) == 1 ? '<i class="bi bi-chevron-right"></i>' : '' !!} </a>
