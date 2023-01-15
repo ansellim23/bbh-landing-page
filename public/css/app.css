@@ -1159,8 +1159,9 @@ input[type=text], input[type=date], input[type=email], input[type=password], sel
     font-size: 15px;
   }
   .features-contents p {
-    display: inline-block;
+    display: inline;
     font-size: 18px;
+    line-height: 25px;
   }
 }
 /* Smartphones */
